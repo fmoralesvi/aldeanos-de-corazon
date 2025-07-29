@@ -8,7 +8,7 @@ body {
 header {
   background-color: #2c3e50;
   padding: 20px;
-  color: white;
+  color: rgb(28, 50, 93);
   text-align: center;
   position: relative;
   z-index: 10; /* Asegura que el menú esté por encima del banner */
@@ -25,7 +25,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(28, 50, 93);
   font-weight: bold;
 }
 
@@ -180,4 +180,98 @@ footer {
 .btn-conocer-mas:hover {
   background-color: #0056b3;
   transform: scale(1.05);
+}
+
+
+.resumen-testimonios {
+  background-color: #f9e5e4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.resumen-testimonios h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.testimonios-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+
+.testimonios-preview blockquote {
+  background: white;
+  border-left: 5px solid #de5a6c;
+  border-radius: 10px;
+  padding: 20px;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimonios-preview blockquote:hover {
+  transform: scale(1.03);
+}
+
+.testimonios-preview span {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.btn-leer-mas {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #de5a6c;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-leer-mas:hover {
+  background-color: #de5a6c;
+}
+
+
+/* NAVBAR FLOTANTE */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  padding: 20px 40px;
+}
+
+/* ESTILO CAMBIADO AL HACER SCROLL */
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 40px;
+}
+
+
+body {
+  padding-top: 80px; /* Ajusta según la altura de tu navbar */
+}
+
+
+.logo img {
+  height: 50px;         /* Ajusta según tu diseño */
+  width: auto;
+  display: block;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: auto;
 }

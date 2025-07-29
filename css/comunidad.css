@@ -174,3 +174,15 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+
+.logo img {
+  height: 50px;         /* Ajusta según tu diseño */
+  width: auto;
+  display: block;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: auto;
+}

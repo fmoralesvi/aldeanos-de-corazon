@@ -203,3 +203,15 @@ nav ul li a:hover {
     font-size: 0.95em;
   }
 }
+
+
+.logo img {
+  height: 50px;         /* Ajusta según tu diseño */
+  width: auto;
+  display: block;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: auto;
+}
