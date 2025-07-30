@@ -12,13 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// main.js
+document.addEventListener("DOMContentLoaded", function () {
+  const formulario = document.querySelector("form");
+  const mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
 
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
+  formulario.addEventListener("submit", function (event) {
+    event.preventDefault(); // Evita que se recargue la página
+
+    // Aquí podrías enviar los datos por fetch si quieres conectar con un servidor
+
+    formulario.reset(); // Limpia el formulario
+    mensajeConfirmacion.style.display = "block"; // Muestra mensaje
+  });
 });
+
